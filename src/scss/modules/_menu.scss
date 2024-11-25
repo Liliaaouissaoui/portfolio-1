@@ -3,21 +3,28 @@ header {
   justify-content: space-between;
 }
 
-nav ul {
-  list-style-type: none; /* Retire les puces */
-  padding: 0; /* Enlève le padding par défaut */
-  margin: 0; /* Enlève la marge par défaut */
-  gap: 1%; /* Ajoute un espacement entre les liens */
+h1 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700; /* je dois modifier le black mais il ne fonctionne pas RELOU */
+}
+
+#nav-list ul {
+  list-style-type: none;
+}
+
+li {
+  padding-bottom: 6%;
 }
 
 /* Style des liens */
-nav ul li a {
-  text-decoration: none; /* Enlève le soulignement */
-  color: #007bff; /* Couleur bleue */
-  font-weight: bold; /* Rend le texte gras */
+#nav-list ul li a {
+  text-decoration: none;
+  color: black; /* Couleur bleue */
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
 
-/* Effet au survol */
-nav ul li a:hover {
-  color: #0056b3; /* Change de couleur au survol */
+#nav-list ul li a:hover {
+  color: rgb(253, 228, 87);
 }
