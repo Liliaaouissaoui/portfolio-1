@@ -1,0 +1,38 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 400vh; /* Permet de scroller sur 4 écrans */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://via.placeholder.com/1920x1080") center/cover
+    no-repeat;
+  z-index: -1; /* Met le fond derrière les éléments */
+}
+
+.scroll-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 20vh; /* Décalage initial */
+}
+
+.scroll-content div {
+  margin: 50px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
