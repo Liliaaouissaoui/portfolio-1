@@ -21,8 +21,13 @@ video {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   margin: 0;
+}
+
+img {
+  max-width: 1000px;
+  max-height: 800px;
 }
 
 /* bootstrap repère */

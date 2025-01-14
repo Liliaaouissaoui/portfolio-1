@@ -23,16 +23,24 @@ html {
   z-index: -1; /* Met le fond derrière les éléments */
 }
 
-.scroll-content {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  padding-top: 20vh; /* Décalage initial */
+#section-1 {
+  border: blue solid 2px;
+  position: absolute;
+  height: 835px;
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -100%;
 }
 
-.scroll-content div {
-  margin: 50px 0;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
+#section-2 {
+  border: red solid 2px;
+  position: absolute;
+  height: 835px;
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -100%;
 }

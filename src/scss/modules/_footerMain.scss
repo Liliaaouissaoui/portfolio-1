@@ -1,0 +1,9 @@
+#info-foot {
+  position: fixed; /* Fixe le footer par rapport à la fenêtre */
+  bottom: 0; /* Colle le footer au bas de la fenêtre */
+  left: 0; /* S'assure qu'il commence à gauche */
+  width: 100%; /* Prend toute la largeur de la fenêtre */
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}

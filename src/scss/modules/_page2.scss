@@ -1,11 +1,43 @@
 /*projet template*/
+header-page2 {
+  margin-bottom: 200px;
+}
+
+#projetText {
+  margin-bottom: 100px;
+}
+
+#projetText h2 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 100px;
+  font-weight: 300;
+}
 
 .projet-img-princpal {
   border: solid black 1px;
   width: 100%;
-  height: 100px;
+  height: 500px;
+}
+
+#projet-img-princ {
+  margin-bottom: 40px;
+}
+
+#projet-paragraphe {
+  padding-top: 35px;
+}
+
+.projet-rect {
+  border: solid black 1px;
+  width: 100%;
+  height: 688px;
 }
 
 .container {
-  max-width: 1000px;
+  margin-bottom: 60px;
+}
+
+#projet-nav-footer {
+  display: flex;
+  justify-content: space-between;
 }

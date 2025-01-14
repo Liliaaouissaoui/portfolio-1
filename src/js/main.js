@@ -3,15 +3,26 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Enregistrement du plugin ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".scroll-content div", {
-  opacity: 0,
-  y: 50,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".scroll-content div",
-    start: "top 80%",
-    end: "top 20%",
-    scrub: true,
-    markers: false, // Passez à true pour le débogage
-  },
-});
+// const tl = gsap.timeline({
+//   scrollTrigger: { trigger: "main", pin: true, scrub: true, end: "+=300vh" },
+// });
+// tl.to("#section-2", { y: "100%" });
+
+// gsap.to("#img-test-1", {
+//   scrollTrigger: {
+//     trigger: "#img-test-1",
+//     //start: "end center",
+//     end: "+=300vh",
+//     pin: true,
+//   },
+//   y: "0px",
+// });
+
+// gsap.to("#img-test-2", {
+//   scrollTrigger: {
+//     trigger: ".img-test-1",
+//     start: "top center",
+//     end: "+=300px",
+//   },
+//   y: "-730px",
+// });
