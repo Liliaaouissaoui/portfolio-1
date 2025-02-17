@@ -3,6 +3,30 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Enregistrement du plugin ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".container",
+      scrub: true,
+      pin: true,
+    },
+  })
+  .to("#element-1 .img", {
+    scale: 0.8,
+  })
+  .to("#element-2", {
+    top: 0,
+  })
+  .to("#element-2 .img", {
+    scale: 0.8,
+  })
+  .to("#element-3", {
+    top: 0,
+  })
+  .to("#element-3 .img", {
+    scale: 0.8,
+  });
+
 // const tl = gsap.timeline({
 //   scrollTrigger: { trigger: "main", pin: true, scrub: true, end: "+=300vh" },
 // });

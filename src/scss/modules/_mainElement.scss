@@ -23,24 +23,53 @@ html {
   z-index: -1; /* Met le fond derrière les éléments */
 }
 
-#section-1 {
-  border: blue solid 2px;
-  position: absolute;
-  height: 835px;
-  width: 1920px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: -100%;
+// final pitier
+
+.containerblock {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-#section-2 {
-  border: red solid 2px;
+.variant {
   position: absolute;
-  height: 835px;
-  width: 1920px;
+  inset: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  bottom: -100%;
+  justify-content: center;
+
+  &:not(#element-1) {
+    top: 200%;
+  }
+
+  .img {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+#element-1 {
+  z-index: 1;
+
+  .img {
+    background: red;
+  }
+}
+
+#element-2 {
+  z-index: 2;
+  .img {
+    background: blue;
+    height: 200px;
+    width: 300px;
+  }
+}
+
+#element-3 {
+  z-index: 3;
+
+  .img {
+    background: green;
+  }
 }
