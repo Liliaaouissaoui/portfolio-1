@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".container",
+      trigger: "body",
       scrub: true,
       pin: true,
     },
