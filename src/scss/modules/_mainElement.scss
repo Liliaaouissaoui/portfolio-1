@@ -52,6 +52,10 @@ html {
   .img {
     background: red;
   }
+  img {
+    height: 100%;
+    margin-left: -20px;
+  }
 }
 
 #element-2 {
@@ -68,6 +72,21 @@ html {
 #element-3 {
   z-index: 3;
 
+  img {
+    height: 100%;
+    margin-left: -40px;
+  }
+}
+
+#element-4 {
+  z-index: 4;
+  .img {
+    height: 400px;
+    width: 600px;
+  }
+  img {
+    width: 100%;
+  }
   .img {
     background: green;
   }
