@@ -31,6 +31,12 @@ gsap
   })
   .to("#element-4 .img", {
     scale: 0.8,
+  })
+  .to("#element-10", {
+    top: 0,
+  })
+  .to("#element-10 .img", {
+    scale: 0.8,
   });
 
 // const tl = gsap.timeline({
