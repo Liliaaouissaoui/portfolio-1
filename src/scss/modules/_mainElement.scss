@@ -41,8 +41,8 @@ html {
   }
 
   .img {
-    width: 400px;
-    height: 600px;
+    width: 500px;
+    height: 700px;
   }
 }
 
@@ -50,20 +50,22 @@ html {
   z-index: 1;
 
   .img {
-    background: red;
+    background: var(--yellow);
+    width: auto;
   }
   img {
-    height: 100%;
-    margin-left: -20px;
+    height: 700px;
+    width: auto;
+    // margin-left: -20px;
   }
 }
 
 #element-2 {
   z-index: 2;
   .img {
-    height: 500px;
-    width: 700px;
-    margin-top: 2%;
+    height: auto;
+    width: auto;
+    // margin-top: 2%;
   }
   img {
     width: 100%;
@@ -72,24 +74,49 @@ html {
 
 #element-3 {
   z-index: 3;
+  .img {
+    background: none;
+  }
 
   img {
     height: 100%;
-    margin-left: -25px;
+    margin-left: -13px;
   }
 }
 
 #element-4 {
   z-index: 4;
   .img {
-    height: 400px;
-    width: 600px;
+    height: auto;
+    width: auto;
+    background: var(--yellow);
   }
   img {
     width: 100%;
   }
+}
+
+#element-5 {
+  z-index: 5;
+  img {
+    width: 105%;
+    height: 100%;
+    margin-left: -13px;
+  }
   .img {
-    background: green;
+    // background: var(--yellow);
+  }
+}
+
+#element-6 {
+  z-index: 6;
+  .img {
+    height: auto;
+    width: auto;
+    background: var(--yellow);
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -98,5 +125,9 @@ html {
 
   .img {
     background: var(--yellow);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20px;
+    width: 700px;
   }
 }
