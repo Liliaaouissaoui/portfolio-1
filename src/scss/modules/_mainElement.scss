@@ -75,12 +75,11 @@ html {
 #element-3 {
   z-index: 3;
   .img {
-    background: none;
-  }
-
-  img {
     height: 100%;
-    margin-left: -13px;
+    margin-left: -140px;
+  }
+  img {
+    width: 140%;
   }
 }
 
@@ -100,16 +99,40 @@ html {
   z-index: 5;
   img {
     width: 105%;
-    height: 100%;
+    height: 120%;
     margin-left: -13px;
+    margin-top: -85px;
   }
   .img {
-    // background: var(--yellow);
+    background: var(--yellow);
   }
 }
 
 #element-6 {
   z-index: 6;
+  .img {
+    height: auto;
+    width: auto;
+    background: var(--yellow);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#element-7 {
+  z-index: 7;
+  .img {
+    height: 100%;
+    margin-left: -140px;
+  }
+  img {
+    width: 140%;
+  }
+}
+
+#element-8 {
+  z-index: 8;
   .img {
     height: auto;
     width: auto;
@@ -128,6 +151,17 @@ html {
     border-radius: 10px;
     text-align: center;
     margin-left: 20px;
-    width: 700px;
+    width: 900px;
+    height: 400px;
   }
+}
+
+#index-contactfont {
+  font-size: 3.5rem;
+  font-family: "Satoshi";
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+  text-transform: uppercase;
+  padding-top: 17%;
 }

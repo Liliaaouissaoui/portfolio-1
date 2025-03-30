@@ -44,6 +44,18 @@ gsap
   .to("#element-6 .img", {
     scale: 0.8,
   })
+  .to("#element-7", {
+    top: 0,
+  })
+  .to("#element-7 .img", {
+    scale: 0.8,
+  })
+  .to("#element-8", {
+    top: 0,
+  })
+  .to("#element-8 .img", {
+    scale: 0.8,
+  })
   .to("#element-10", {
     top: 0,
   })
