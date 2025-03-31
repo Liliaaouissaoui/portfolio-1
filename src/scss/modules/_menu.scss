@@ -8,7 +8,7 @@
 
 h1 {
   font-family: "Satoshi", sans-serif;
-  font-weight: 700; /* je dois modifier le black mais il ne fonctionne pas RELOU */
+  font-weight: 700; 
   font-size: 100px;
   color: var(--yellow);
 }
@@ -24,7 +24,7 @@ li {
 /* Style des liens */
 #nav-list ul li a {
   text-decoration: none;
-  color: black; /* Couleur bleue */
+  color: black;
   font-family: "Satoshi", sans-serif;
   font-weight: 700;
   transition: color 0.3s ease;
