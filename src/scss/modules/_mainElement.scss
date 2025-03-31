@@ -147,11 +147,11 @@ html {
   z-index: 10;
 
   .img {
-    background: var(--yellow);
+    background: black;
     border-radius: 10px;
     text-align: center;
     margin-left: 20px;
-    width: 900px;
+    width: 800px;
     height: 400px;
   }
 }
@@ -163,5 +163,6 @@ html {
   font-style: normal;
   font-display: fallback;
   text-transform: uppercase;
-  padding-top: 17%;
+  padding-top: 19%;
+  color: var(--yellow);
 }
