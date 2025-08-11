@@ -61,3 +61,150 @@
 
 // projet minshift taille image
 
+//page galerie ci dessous
+
+.gallery-img {
+  width: auto;
+  height: 40%;
+}
+:root {
+  --gap: clamp(14px, 2vw, 24px);
+  --maxw: min(1200px, 92vw);
+}
+
+.gallery-wrap {
+  display: grid;
+  place-items: center;
+  padding: 10vh 0 16vh;
+}
+.gallery {
+  width: var(--maxw);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gap);
+}
+
+/* Carte / lien */
+.item {
+  grid-column: span 4;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  will-change: transform;
+  /* on compose : décalage de base + flottement JS + rotation */
+  --shift: 0px;
+  --float: 0px; /* MAJ par JS */
+  --rot: 0deg;
+  transform: translateY(calc(var(--shift) + var(--float))) rotate(var(--rot));
+}
+.card {
+  display: block;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  transform: scale(1.012);
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.meta {
+  padding: 0.8rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+.badge {
+  margin-left: auto;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: #2a2a2f;
+  color: #e5e7eb;
+}
+
+/* Placement organique (desktop ≥ 992px) */
+@media (min-width: 992px) {
+  .item:nth-child(1) {
+    grid-column: span 7;
+    --shift: 0px;
+    --rot: -0.4deg;
+  }
+  .item:nth-child(2) {
+    grid-column: span 5;
+    --shift: 60px;
+    --rot: 0.8deg;
+  }
+  .item:nth-child(3) {
+    grid-column: span 6;
+    --shift: -30px;
+    --rot: -1deg;
+  }
+  .item:nth-child(4) {
+    grid-column: span 6;
+    --shift: 40px;
+    --rot: 0.6deg;
+  }
+  .item:nth-child(5) {
+    grid-column: span 5;
+    --shift: 20px;
+    --rot: -0.3deg;
+  }
+  .item:nth-child(6) {
+    grid-column: span 7;
+    --shift: -40px;
+    --rot: 0.9deg;
+  }
+}
+
+/* Largeurs utilitaires si tu ajoutes d’autres items */
+.w-5 {
+  grid-column: span 5;
+}
+.w-6 {
+  grid-column: span 6;
+}
+.w-7 {
+  grid-column: span 7;
+}
+
+/* Tablette */
+@media (max-width: 991.98px) {
+  .item {
+    grid-column: span 6;
+    --shift: 0px;
+    --rot: 0deg;
+  }
+  .w-7,
+  .w-6,
+  .w-5 {
+    grid-column: span 6;
+  }
+}
+/* Mobile */
+@media (max-width: 575.98px) {
+  .gallery {
+    gap: clamp(10px, 3vw, 16px);
+  }
+  .item {
+    grid-column: 1 / -1;
+  }
+  .meta {
+    font-size: 0.9rem;
+  }
+}
+
+/* Accessibilité motion */
+@media (prefers-reduced-motion: reduce) {
+  .item,
+  .card {
+    transition: none;
+  }
+}
