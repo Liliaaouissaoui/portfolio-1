@@ -15,7 +15,7 @@ html {
 
 .container {
   position: relative;
-  height: 400vh; /* Permet de scroller sur 4 écrans */
+  height: 163vh; /* Permet de scroller sur 4 écrans */
 }
 
 .background {
@@ -138,6 +138,18 @@ html {
 
 #element-8 {
   z-index: 8;
+  .img {
+    height: auto;
+    width: auto;
+    background: var(--yellow);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#element-9 {
+  z-index: 9;
   .img {
     height: auto;
     width: auto;

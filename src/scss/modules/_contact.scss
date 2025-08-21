@@ -1,0 +1,48 @@
+/* ===== CONTACT-ONLY (mobile) ===== */
+@media (max-width: 900px) {
+  /* neutralise les hauteurs forcées qui cassent */
+  body.contact-page .container,
+  body.contact-page main,
+  body.contact-page .section {
+    height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* si tu as une section "plein écran" sur contact */
+  body.contact-page .hero,
+  body.contact-page .intro {
+    min-height: 100svh;
+  }
+  @supports (height: 100dvh) {
+    body.contact-page .hero,
+    body.contact-page .intro {
+      min-height: 100dvh;
+    }
+  }
+
+  /* layout sans superposition */
+  body.contact-page .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  body.contact-page .contact-grid > * {
+    position: static !important;
+    transform: none !important;
+  }
+
+  /* images qui ne débordent pas */
+  body.contact-page img,
+  body.contact-page video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* marges internes confort */
+  body.contact-page .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

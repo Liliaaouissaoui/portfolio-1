@@ -14,13 +14,13 @@
 
 .container-reseaux {
   display: flex;
-  margin-top: 60%;
-  width: 60%;
-  margin-left: 50%;
+  width: 50%;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .icone-lien {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .formation {
