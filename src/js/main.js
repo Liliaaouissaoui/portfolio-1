@@ -62,10 +62,16 @@ gsap
   .to("#element-9 .img", {
     scale: 0.8,
   })
-  .to("#element-10", {
+  .to("#element-11", {
     top: 0,
   })
-  .to("#element-10 .img", {
+  .to("#element-11 .img", {
+    scale: 0.8,
+  })
+  .to("#element-10contact", {
+    top: 0,
+  })
+  .to("#element-10contact .img", {
     scale: 0.8,
   });
 

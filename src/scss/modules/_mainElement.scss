@@ -160,8 +160,20 @@ html {
   }
 }
 
-#element-10 {
+#element-11 {
   z-index: 10;
+  .img {
+    height: auto;
+    width: auto;
+    background: var(--yellow);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#element-10contact {
+  z-index: 100;
 
   .img {
     background: black;
@@ -174,7 +186,7 @@ html {
 }
 
 @media (max-width: 852px) {
-  #element-10 {
+  #element-10contact {
     .img {
       width: 460px;
       height: 300px;
